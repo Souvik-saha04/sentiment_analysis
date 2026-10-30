@@ -3,5 +3,5 @@ venv/
 
 *.csv
 
-*.pkl
+
 __pycache__/

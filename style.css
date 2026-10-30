@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html, body, [class*="css"], .stApp {
+    font-family: 'Roboto Condensed', 'Segoe UI', Arial, sans-serif;
+    color: #d7e6f0;
+}
+.stApp { background: radial-gradient(ellipse at 50% 25%, #0c1424 0%, #04060c 70%); }
+header[data-testid="stHeader"] { background: transparent; }
+#MainMenu, footer { visibility: hidden; }
+.block-container { max-width: 780px; padding-top: 2.2rem; padding-bottom: 4rem; }
+
+/* ---------- Title ---------- */
+.app-title {
+    text-align: center; text-transform: uppercase; letter-spacing: 0.03em;
+    font-size: 2.3rem; font-weight: 700; color: #b9f6e4; margin-bottom: 1.8rem;
+}
+
+/* ---------- Rectangular panels ---------- */
+.st-key-input_panel, .st-key-result_panel {
+    padding: 1.2rem 1.4rem 1.4rem;
+    background: rgba(6, 10, 20, 0.92);
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, #ecef11, #f61c1c 50%, #a9ef46) 1;
+}
+.st-key-result_panel {
+    margin-top: 1.4rem;
+    border-image: linear-gradient(135deg, #7200dc, #6366f1 35%, #42e6e6 70%, #ffffff) 1;
+}
+
+/* ---------- Input + button ---------- */
+.st-key-input_panel div[data-baseweb="input"],
+.st-key-input_panel div[data-baseweb="base-input"] {
+    border-radius: 0; background: rgba(14, 30, 36, 0.7);
+}
+.st-key-input_panel div[data-baseweb="input"] { border: 1px dashed #2dd4bf; min-height: 44px; }
+.st-key-input_panel input { color: #e6fffb; }
+
+.st-key-analyze_btn button {
+    width: 100%; min-height: 44px; border-radius: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #22d3ee, #a855f7, #f59e0b) 1;
+    background: #0d3b3f; color: #e6fffb;
+    font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.st-key-analyze_btn button:hover, .st-key-analyze_btn button:focus:not(:active) {
+    background: #14666b; color: #fff;
+}
+
+/* ---------- Result badge ---------- */
+.badge {
+    display: inline-block; padding: 0.55rem 1.7rem; border-radius: 999px;
+    font-size: 1.9rem; font-weight: 700; color: #fff;
+}
+.badge.positive { background: #2e9e4f; }
+.badge.negetive { background: #c0392b; }
+.badge.neutral  { background: #c98a14; }
